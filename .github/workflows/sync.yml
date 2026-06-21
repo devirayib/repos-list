@@ -12,6 +12,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
       
       - name: Set up Python
         uses: actions/setup-python@v4
@@ -20,11 +22,15 @@ jobs:
       
       - name: Run discovery
         run: python github-automation.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       
       - name: Commit manifest
         run: |
           git config user.name "Hermes Bot"
           git config user.email "bot@hermes.local"
-          git add repos.json dashboard.json
+          git add repos.json dashboard.json 2>/dev/null || true
           git commit -m "chore: update repo manifest [skip ci]" || true
-          git push
+          git push origin main || echo "No changes to push"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
