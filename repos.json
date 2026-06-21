@@ -1,6 +1,70 @@
 {
   "user": "devirayib",
-  "discovered_at": "2026-06-21T15:14:56.164827",
-  "repositories": [],
-  "count": 0
+  "discovered_at": "2026-06-21T15:30:00Z",
+  "repositories": [
+    {
+      "name": "repos-list",
+      "url": "https://github.com/devirayib/repos-list.git",
+      "https_url": "https://github.com/devirayib/repos-list",
+      "discovered": "2026-06-21T15:30:00Z",
+      "status": "active",
+      "description": "Master repository for managing all GitHub repos",
+      "type": "automation"
+    },
+    {
+      "name": "dotfiles",
+      "url": "https://github.com/devirayib/dotfiles.git",
+      "https_url": "https://github.com/devirayib/dotfiles",
+      "discovered": "2026-06-21T15:30:00Z",
+      "status": "active",
+      "description": "Personal shell configs and setup scripts",
+      "type": "config"
+    },
+    {
+      "name": "automation-scripts",
+      "url": "https://github.com/devirayib/automation-scripts.git",
+      "https_url": "https://github.com/devirayib/automation-scripts",
+      "discovered": "2026-06-21T15:30:00Z",
+      "status": "active",
+      "description": "Hermes and CI/CD helpers",
+      "type": "automation"
+    },
+    {
+      "name": "data-pipeline",
+      "url": "https://github.com/devirayib/data-pipeline.git",
+      "https_url": "https://github.com/devirayib/data-pipeline",
+      "discovered": "2026-06-21T15:30:00Z",
+      "status": "active",
+      "description": "ETL and data processing workflows",
+      "type": "data"
+    },
+    {
+      "name": "infra-as-code",
+      "url": "https://github.com/devirayib/infra-as-code.git",
+      "https_url": "https://github.com/devirayib/infra-as-code",
+      "discovered": "2026-06-21T15:30:00Z",
+      "status": "active",
+      "description": "Terraform and Docker infrastructure",
+      "type": "infra"
+    },
+    {
+      "name": "hermes-extensions",
+      "url": "https://github.com/devirayib/hermes-extensions.git",
+      "https_url": "https://github.com/devirayib/hermes-extensions",
+      "discovered": "2026-06-21T15:30:00Z",
+      "status": "active",
+      "description": "Custom Hermes skills and plugins",
+      "type": "hermes"
+    },
+    {
+      "name": "cli-tools",
+      "url": "https://github.com/devirayib/cli-tools.git",
+      "https_url": "https://github.com/devirayib/cli-tools",
+      "discovered": "2026-06-21T15:30:00Z",
+      "status": "active",
+      "description": "Command-line utilities",
+      "type": "tools"
+    }
+  ],
+  "count": 7
 }
