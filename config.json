@@ -1,0 +1,27 @@
+{
+  "user": "devirayib",
+  "email": "igor.b.6i9@gmail.com",
+  "name": "Igors",
+  "workspace": "~/hermes-workspace",
+  "github_token_location": "~/.git-credentials",
+  "automation": {
+    "auto_discovery": true,
+    "auto_sync_interval": 3600,
+    "auto_create_workflows": true
+  },
+  "defaults": {
+    "visibility": "private",
+    "license": "MIT",
+    "include_readme": true,
+    "include_gitignore": true,
+    "include_license": true
+  },
+  "templates": {
+    "python": ["setup.py", "requirements.txt", ".python-version"],
+    "nodejs": ["package.json", ".npmrc", "tsconfig.json"],
+    "docker": ["Dockerfile", "docker-compose.yml", ".dockerignore"],
+    "ml": ["requirements.txt", "notebooks/", "data/.gitkeep"],
+    "web": ["index.html", "style.css", "script.js"],
+    "terraform": ["main.tf", "variables.tf", "outputs.tf"]
+  }
+}

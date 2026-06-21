@@ -1,0 +1,30 @@
+name: Daily Repo Sync & Status
+
+on:
+  schedule:
+    - cron: '0 0 * * *'  # Daily at midnight UTC
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  discovery:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+      
+      - name: Run discovery
+        run: python github-automation.py
+      
+      - name: Commit manifest
+        run: |
+          git config user.name "Hermes Bot"
+          git config user.email "bot@hermes.local"
+          git add repos.json dashboard.json
+          git commit -m "chore: update repo manifest [skip ci]" || true
+          git push
