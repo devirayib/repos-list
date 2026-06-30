@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-06-30T11:25:38Z",
+  "session_id": "20260630-112538",
+  "agent": "hermes-claude-code",
+  "user": "devirayib",
+  "host": "LenovoY50",
+  "working_dir": "/c/Users/Devir/hermes-workspace/repos-list",
+  "git_status": "?? state/sessions/session-20260630-112538.json",
+  "last_commit": "63940ce snapshot: session 20260630-112032 - memory integration point",
+  "memory_layers": {
+    "hermes_memory": "Persisted to ~/.hermes/memories/",
+    "honcho_memory": "Active (dialectic reasoning)",
+    "github_storage": "Session snapshot at /c/Users/Devir/hermes-workspace/repos-list/state/sessions/session-20260630-112538.json"
+  },
+  "notes": "Session snapshot - see GitHub for full context"
+}
